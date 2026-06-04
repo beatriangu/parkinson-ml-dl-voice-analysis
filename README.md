@@ -1,8 +1,8 @@
-# Parkinson ML & Deep Learning Voice Analysis
+# Parkinson ML & Deep Learning Classification Analysis
 
-Machine Learning and Deep Learning project focused on Parkinson’s Disease detection using biomedical voice measurements.
+Machine Learning and Deep Learning classification project focused on Parkinson’s Disease detection using biomedical voice measurements.
 
-This project explores how classical Machine Learning algorithms and Deep Learning neural networks can classify Parkinson’s Disease using voice-based biomarkers.
+This project explores how Classical Machine Learning algorithms and Deep Learning neural networks can classify Parkinson’s Disease using voice-based biomarkers extracted from speech recordings.
 
 ---
 
@@ -11,15 +11,27 @@ This project explores how classical Machine Learning algorithms and Deep Learnin
 * Explore biomedical voice datasets related to Parkinson’s Disease
 * Perform professional Exploratory Data Analysis (EDA)
 * Train and compare multiple Machine Learning classification models
-* Build and evaluate a Deep Learning neural network
+* Build and evaluate a Deep Learning classification neural network
 * Analyze model performance and interpretability
-* Create a reproducible and portfolio-ready ML project
+* Compare Classical ML vs Deep Learning approaches
+* Create a reproducible and portfolio-ready biomedical AI project
+
+---
+
+# Learning Approach
+
+The project follows a progressive Machine Learning workflow:
+
+1. Exploratory Data Analysis (EDA)
+2. Classical Machine Learning Classification
+3. Deep Learning Classification
+4. Performance comparison and interpretation
 
 ---
 
 # Dataset
 
-The project uses the **UCI Parkinson’s Disease Dataset**, which contains multiple biomedical voice measurements extracted from speech recordings.
+The project uses the **UCI Parkinson’s Disease Dataset**, which contains biomedical voice measurements extracted from speech recordings.
 
 The target variable:
 
@@ -52,10 +64,11 @@ parkinson-ml-dl-voice-analysis/
 ├── notebooks/
 │   ├── 01_eda_parkinson.ipynb
 │   ├── 02_ml_models_parkinson.ipynb
-│   └── 03_deep_learning_parkinson.ipynb
+│   └── 03_deep_learning_classification_parkinson.ipynb
 │
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
@@ -90,9 +103,9 @@ The EDA phase focused on:
 
 ---
 
-# Machine Learning Models
+# Classical Machine Learning Classification
 
-Several classical Machine Learning models were trained and evaluated:
+Several Classical Machine Learning classification models were trained and evaluated:
 
 * Logistic Regression
 * Random Forest
@@ -138,9 +151,9 @@ Evaluation metrics:
 
 ---
 
-# Deep Learning
+# Deep Learning Classification
 
-A feedforward neural network was implemented using TensorFlow/Keras.
+A feedforward neural network was implemented using TensorFlow/Keras for Parkinson classification.
 
 Architecture:
 
@@ -178,9 +191,10 @@ Architecture:
 
 * Voice biomarkers contain highly predictive information for Parkinson detection.
 * Classical Machine Learning models already achieve strong performance.
-* XGBoost achieved the best overall classical ML performance.
+* XGBoost achieved the best overall Classical ML performance.
 * Deep Learning achieved competitive results but did not drastically outperform XGBoost.
 * This demonstrates that Deep Learning is not always superior for small tabular biomedical datasets.
+* Model complexity should always be adapted to dataset size and structure.
 
 ---
 
@@ -217,4 +231,5 @@ Potential future developments:
 
 Beatriz Lamiquiz
 
-AI • Machine Learning • Python • Biomedical Data Projects
+AI • Machine Learning • Deep Learning • Biomedical Data Projects
+
